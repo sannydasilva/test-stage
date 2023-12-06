@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <NavLink to="/article">
         <button className="home-button">CONFIGURER</button>
       </NavLink>

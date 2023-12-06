@@ -14,3 +14,20 @@ body {
   margin-top: 10px;
   border: #d7b899 solid 1px;
 }
+
+@media (min-width: 425px) and (max-width: 500px) {
+  .home {
+    display: inline-block;
+  }
+  .home-button {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .home {
+    display: inline-block;
+  }
+  .home-button {
+    margin-top: 20px;
+  }
+}

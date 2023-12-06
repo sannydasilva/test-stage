@@ -19,3 +19,14 @@ i.home.icon {
   left: 15px;
   color: white;
 }
+@media (min-width: 425px) and (max-width: 900px) {
+  i.home.icon {
+    right: 10px;
+    top: 20px;
+    position: fixed;
+    left: auto;
+  }
+  .ui.inverted.menu .item {
+    margin: 0 5px;
+  }
+}

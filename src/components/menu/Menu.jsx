@@ -10,7 +10,7 @@ const Menu = () => {
             <i className="home icon"></i>
           </div>
         </NavLink>
-        <a className="active item">Produits</a>
+        <a className="item">Produits</a>
         <a className="item">Le Concept</a>
         <a className="item">Boutique</a>
         <a className="item">Avis</a>
