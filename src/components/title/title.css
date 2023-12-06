@@ -3,7 +3,7 @@ h1.home-title {
   margin-top: 20px;
 }
 
-@media (min-width: 425px) and (max-width: 900px) {
+@media (min-width: 375px) and (max-width: 900px) {
   h1.home-title {
     margin-top: 60px;
   }

@@ -30,7 +30,7 @@
   padding: 20px 40px;
 }
 
-@media (min-width: 425px) and (max-width: 500px) {
+@media (min-width: 375px) and (max-width: 500px) {
   .etagere-text {
     width: auto;
     top: 250px;
@@ -57,7 +57,33 @@
     left: 80px;
   }
 }
-@media (min-width: 501px) and (max-width: 600px) {
+@media (min-width: 375px) and (max-width: 425px) {
+  .etagere-text {
+    width: 100%;
+    top: 250px;
+    left: auto;
+    padding: 20px 20px;
+  }
+  .img-etageres {
+    width: 40%;
+    position: relative;
+    top: 500px;
+    left: 20px;
+  }
+  .img-niche {
+    width: 40%;
+    position: relative;
+    top: 500px;
+    left: 80px;
+  }
+  .img-etageres2 {
+    width: 60%;
+    position: relative;
+    top: 550px;
+    left: 80px;
+  }
+}
+@media (min-width: 426px) and (max-width: 600px) {
   .etagere-text {
     width: auto;
     top: 280px;
@@ -68,7 +94,7 @@
   .img-etageres {
     width: 40%;
     position: relative;
-    top: 450px;
+    top: 480px;
     left: 20px;
   }
   .img-niche {
