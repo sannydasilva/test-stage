@@ -1,18 +1,18 @@
-.img-etageres3 {
+/* .img-etageres3 {
   width: 40%;
   position: absolute;
   top: 300px;
   left: 30px;
-}
+} */
 h3 {
   color: #d7b899;
 }
-.modif-etagere {
+/* .modif-etagere {
   width: 50%;
   position: absolute;
   top: 300px;
   right: 20px;
-}
+} */
 .ui.progress {
   margin: 10px 0;
 }
@@ -60,4 +60,52 @@ div.label {
   width: 250px;
   border: 1px solid #d7b899;
   border-radius: 30% 0%;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .modif-etagere {
+    width: 70%;
+    position: relative;
+  }
+  .img-etageres3 {
+    width: 50%;
+    position: relative;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .modif-etagere {
+    width: 80%;
+    position: relative;
+  }
+  .img-etageres3 {
+    width: 50%;
+    position: relative;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 769px) {
+  .modif-etagere {
+    width: 50%;
+    position: absolute;
+    top: 300px;
+    right: 20px;
+  }
+  .img-etageres3 {
+    width: 40%;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+  }
 }
