@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Article = () => {
   const [length, setLength] = useState(30);
+  const [rangeValue, setRangeValue] = useState(36);
 
   const handleIncrement = () => {
     if (length < 245) {
@@ -58,62 +59,34 @@ const Article = () => {
             </div>
           </div>
           <h3>Dimensions</h3>
-          <div className="ui progress">
-            <div className="bar">
-              <div
-                className="progress"
-                style={{
-                  width: progressWidth,
-                }}
-              ></div>
-            </div>
-            <div className="label">Longueur: {length} cm</div>
+          <div className="bar-progress">
+            <h4 className="label">Longueur</h4>
+            30
+            <input
+              type="range"
+              min="30"
+              max="245"
+              step="1"
+              defaultValue={rangeValue}
+              onChange={(e) => setRangeValue(e.target.value)}
+            />{" "}
+            245
           </div>
-          <div className="ignored">
-            <div className="ui icon buttons">
-              <div
-                className="decrement ui basic inverted red button icon"
-                onClick={handleDecrement}
-              >
-                <i className="minus icon"></i>
-              </div>
-              <div
-                className="increment ui basic inverted green button icon"
-                onClick={handleIncrement}
-              >
-                <i className="plus icon"></i>
-              </div>
-            </div>
-          </div>
-          <div className="ui progress">
-            <div className="bar">
-              <div
-                className="progress"
-                style={{
-                  width: progressWidth,
-                }}
-              ></div>
-            </div>
-            <div className="label">Largeur: {length} cm</div>
-          </div>
-          <div className="ignored">
-            <div className="ui icon buttons">
-              <div
-                className="decrement ui basic inverted red button icon"
-                onClick={handleDecrement}
-              >
-                <i className="minus icon"></i>
-              </div>
-              <div
-                className="increment ui basic inverted green button icon"
-                onClick={handleIncrement}
-              >
-                <i className="plus icon"></i>
-              </div>
-            </div>
+          <div className="bar-progress">
+            <h4 className="label2">Largeur</h4>
+            14
+            <input
+              type="range"
+              min="14"
+              max="120"
+              step="1"
+              defaultValue={rangeValue}
+              onChange={(e) => setRangeValue(e.target.value)}
+            />{" "}
+            120
           </div>
           <div className="epaisseur">
-            <div className="label">Epaisseur</div>
+            <h4 className="label">Epaisseur</h4>
 
             <div className="field">
               <div className="ui radio checkbox">

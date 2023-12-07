@@ -1,23 +1,12 @@
-/* .img-etageres3 {
-  width: 40%;
-  position: absolute;
-  top: 300px;
-  left: 30px;
-} */
 h3 {
   color: #d7b899;
 }
-/* .modif-etagere {
-  width: 50%;
-  position: absolute;
-  top: 300px;
-  right: 20px;
-} */
-.ui.progress {
-  margin: 10px 0;
-}
 
-.bar {
+/* .ui.progress {
+  margin: 10px 0;
+} */
+
+/* .bar {
   width: 100%;
   height: 20px;
   background: #ddd;
@@ -28,9 +17,14 @@ h3 {
 .progress {
   height: 100%;
   background: black;
-}
-.ui.progress .bar {
+} */
+/* .ui.progress .bar {
   width: 100%;
+} */
+
+.bar-progress {
+  display: flex;
+  align-items: baseline;
 }
 
 .ui.icon.buttons {
@@ -45,6 +39,14 @@ div.field {
 }
 div.label {
   margin-right: 50px;
+}
+h4.label {
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+h4.label2 {
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 .button-panier {
   margin-bottom: 20px;
@@ -108,4 +110,31 @@ div.label {
     top: 300px;
     left: 30px;
   }
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 1px;
+  border-radius: 5px;
+  background: black;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black; /* Couleur du curseur (rond bleu dans cet exemple) */
+  cursor: pointer;
 }
