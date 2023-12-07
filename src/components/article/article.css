@@ -2,29 +2,10 @@ h3 {
   color: #d7b899;
 }
 
-/* .ui.progress {
-  margin: 10px 0;
-} */
-
-/* .bar {
-  width: 100%;
-  height: 20px;
-  background: #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.progress {
-  height: 100%;
-  background: black;
-} */
-/* .ui.progress .bar {
-  width: 100%;
-} */
-
 .bar-progress {
   display: flex;
   align-items: baseline;
+  position: relative;
 }
 
 .ui.icon.buttons {
@@ -123,6 +104,25 @@ input[type="range"] {
   transition: opacity 0.2s;
   margin: 0 10px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.bubble {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  z-index: 2;
+}
+
+.bar-progress:hover .bubble {
+  display: block;
 }
 
 input[type="range"]:hover {
@@ -135,6 +135,6 @@ input[type="range"]::-webkit-slider-thumb {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: black; /* Couleur du curseur (rond bleu dans cet exemple) */
+  background: black;
   cursor: pointer;
 }

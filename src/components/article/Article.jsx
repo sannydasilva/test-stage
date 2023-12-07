@@ -4,22 +4,8 @@ import "./article.css";
 import { useState } from "react";
 
 const Article = () => {
-  const [length, setLength] = useState(30);
-  const [rangeValue, setRangeValue] = useState(36);
-
-  const handleIncrement = () => {
-    if (length < 245) {
-      setLength(length + 10);
-    }
-  };
-
-  const handleDecrement = () => {
-    if (length > 30) {
-      setLength(length - 10);
-    }
-  };
-
-  const progressWidth = ((length - 30) / (245 - 30)) * 100 + "%";
+  const [rangeValue, setRangeValue] = useState(30);
+  const [rangeValue2, setRangeValue2] = useState(14);
 
   return (
     <>
@@ -62,6 +48,7 @@ const Article = () => {
           <div className="bar-progress">
             <h4 className="label">Longueur</h4>
             30
+            <div className="bubble">{rangeValue}</div>
             <input
               type="range"
               min="30"
@@ -75,13 +62,14 @@ const Article = () => {
           <div className="bar-progress">
             <h4 className="label2">Largeur</h4>
             14
+            <div className="bubble">{rangeValue2}</div>
             <input
               type="range"
               min="14"
               max="120"
               step="1"
-              defaultValue={rangeValue}
-              onChange={(e) => setRangeValue(e.target.value)}
+              defaultValue={rangeValue2}
+              onChange={(e) => setRangeValue2(e.target.value)}
             />{" "}
             120
           </div>
