@@ -152,12 +152,12 @@ input[type="range"]::-webkit-slider-thumb {
   height: 30px;
 }
 .ui.radio.checkbox input[type="radio"] + label::before {
-  content: ""; /* Nécessaire pour que le pseudo-élément ::before soit généré */
-  background-image: url("./chene.png"); /* Remplacez par le chemin de votre image */
-  background-size: cover; /* Ajustez selon vos préférences */
+  content: "";
+  background-image: url("../chene.png");
+  background-size: cover;
   width: 30px;
   height: 30px;
-  display: inline-block; /* Permet à la taille d'être définie */
+  display: inline-block;
 }
 div.ui.radio.checkbox {
   line-height: 90px;
