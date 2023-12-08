@@ -21,7 +21,7 @@ const Article = () => {
               <div className="field">
                 <div className="ui radio checkbox">
                   <input type="radio" name="frequency" />
-                  <label>Frêne</label>
+                  <label className="frene">Frêne</label>
                 </div>
               </div>
               <div className="field">
@@ -33,7 +33,7 @@ const Article = () => {
               <div className="field">
                 <div className="ui radio checkbox">
                   <input type="radio" name="frequency" />
-                  <label>Noyer</label>
+                  <label className="noyer">Noyer</label>
                 </div>
               </div>
               <div className="field">

@@ -185,3 +185,9 @@ div.ui.radio.checkbox {
   margin: 0;
   padding: 0 5em 0 0;
 }
+.ui.radio.checkbox input[type="radio"] + label.frene::before {
+  background-image: url("../frene.png");
+}
+.ui.radio.checkbox input[type="radio"] + label.noyer::before {
+  background-image: url("../noyer.png");
+}
